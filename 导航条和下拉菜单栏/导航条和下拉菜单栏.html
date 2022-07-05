@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+      }
+      body {
+        background: rgb(227, 222, 223);
+      }
+      .nav {
+        height: 40px;
+        background: #333;
+        /* 设置阴影 */
+        box-shadow: 0 1px 2px #666;
+      }
+      .btli {
+        /* 左浮动，让他们横排 */
+        float: left;
+        /* 设置宽高和行高 */
+        width: 100px;
+        line-height: 40px;
+        /* 对齐方式水平居中 */
+        text-align: center;
+      }
+
+      .navlist a {
+        /* 超链接的字为白色 */
+        color: #fff;
+        /* 让他以块来显示 */
+        display: block;
+      }
+      .navlist a:hover {
+        /* 鼠标悬停时背景变色 */
+        background: #666;
+      }
+      .droplist {
+        /* 改变下拉列表的颜色 */
+        background: #333;
+        /* 设置阴影 */
+        box-shadow: 0 1px 2px #333;
+        /* 让他不显示 */
+        display: none;
+        /* 列表变圆角，会好看一点 */
+        border-radius: 6px;
+        /* 把超出的部分隐藏 */
+        overflow: hidden;
+      }
+      /* 让鼠标移动到导航栏时，下拉显示 */
+      .btli:hover .droplist {
+        display: block;
+      }
+      .droplist li {
+        /* 每一项加一条线隔开 */
+        border-top: 1px solid #666;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 先做导航条 -->
+    <div class="nav">
+      <ul class="navlist">
+        <li class="btli">
+          <a href="#">导航项</a>
+          <ul class="droplist">
+            <li><a href="#">我是下拉</a></li>
+            <li><a href="#">我是下拉</a></li>
+            <li><a href="#">我是下拉</a></li>
+            <li><a href="#">我是下拉</a></li>
+          </ul>
+        </li>
+        <li class="btli">
+          <a href="#">导航项</a>
+          <ul class="droplist">
+            <li><a href="#">我是下拉</a></li>
+            <li><a href="#">我是下拉</a></li>
+            <li><a href="#">我是下拉</a></li>
+            <li><a href="#">我是下拉</a></li>
+          </ul>
+        </li>
+        <li class="btli">
+          <a href="#">导航项</a>
+          <ul class="droplist">
+            <li><a href="#">我是下拉</a></li>
+            <li><a href="#">我是下拉</a></li>
+            <li><a href="#">我是下拉</a></li>
+            <li><a href="#">我是下拉</a></li>
+          </ul>
+        </li>
+        <li class="btli">
+          <a href="#">导航项</a>
+          <ul class="droplist">
+            <li><a href="#">我是下拉</a></li>
+            <li><a href="#">我是下拉</a></li>
+            <li><a href="#">我是下拉</a></li>
+            <li><a href="#">我是下拉</a></li>
+          </ul>
+        </li>
+        <li class="btli">
+          <a href="#">导航项</a>
+          <ul class="droplist">
+            <li><a href="#">我是下拉</a></li>
+            <li><a href="#">我是下拉</a></li>
+            <li><a href="#">我是下拉</a></li>
+            <li><a href="#">我是下拉</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

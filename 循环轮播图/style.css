@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	position: relative;
+	margin: 100px auto;
+	width: 500px;
+	height: 300px;
+	overflow: hidden;
+}
+.carousel {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	transition: all 1s;
+}
+.container .carousel img {
+	width: 500px;
+	height: 300px;
+}
+
+.indicator {
+	display: flex;
+	position: absolute;
+	left: 50%; /*居中，但只有这个会中间偏右，所以还要过去整个元素的50%像素*/
+	/* margin-left: -62.5px;   */
+	transform: translateX(-50%);
+	bottom: 10px;
+}
+.indicator span {
+	width: 15px;
+	height: 15px;
+	margin: 0 3px;
+	border: 2px solid #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.indicator span.active {
+	background-color: #fff;
+	border-color: #fff;
+}
