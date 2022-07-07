@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 36px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+/* 头部 */
+header {
+	display: flex;
+	height: 50px;
+	line-height: 50px;
+	background-color: rgb(101, 47, 240);
+}
+header span {
+	font-size: 30px;
+	font-weight: 600;
+	color: white;
+}
+header input {
+	margin: 10px 20px;
+	outline: none;
+	border: none;
+	width: 40%;
+	padding-left: 5px;
+	height: 30px;
+	font-size: 16px;
+	line-height: 30px;
+	border-radius: 8px;
+}
+header button {
+	margin: 10px 0;
+	width: 80px;
+	height: 30px;
+	background-color: white;
+	font-size: 17px;
+	border-radius: 15px;
+	font-weight: 700;
+	cursor: pointer;
+	border: none;
+}
+/* 主体部分 */
+main {
+	display: flex;
+	flex-direction: row;
+}
+/* ToDo部分 */
+.ToDo {
+	width: 60%;
+	height: calc(100vh - 50px);
+	border-right: 2px solid #999;
+	background-color: snow;
+}
+main ul {
+	margin-top: 40px;
+	margin-left: 50px;
+}
+main ul li {
+	display: flex;
+	position: relative;
+	align-items: center;
+	list-style: none;
+	font-size: 20px;
+	width: 80%;
+	height: 50px;
+	margin-top: 5px;
+	line-height: 10px;
+	border-left: 7px solid skyblue;
+	border-bottom: 1px solid #999;
+	border-radius: 5px;
+}
+.ToDo ul li {
+	font-family: 'Times New Roman', KaiTi;
+}
+main ul li input {
+	margin: 0 10px;
+	width: 20px;
+	height: 20px;
+}
+main ul li button {
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	bottom: 4px;
+	width: 40px;
+	height: 30px;
+	background-color: #fff;
+	border: 1px solid #999;
+}
+/* Done部分 */
+.Done {
+	flex: 1;
+	height: calc(100vh - 50px);
+	background-color: paleturquoise;
+}
+.Done ul li {
+	/* opacity: 0.5; */
+	border-left: 7px solid #0c1c38;
+	border-bottom: 1px solid rgb(130, 130, 130);
+}
+.Done ul li input {
+	color: greenyellow;
+}
